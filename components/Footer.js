@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       <footer className={styles.footer}>
         <div class={styles.footerAtas}>
-          <img src="/mampu-icon.svg" alt="Mampu Logo" className={styles.mampuLogo} />
+        <img src="/mampu-icon.svg" alt="Mampu Logo" className={styles.mampuLogo} />
           <div class={styles.headquarterText}>
               <p class={styles.title}>Headquarters</p>
               <p class={styles.desc}>Jl. Alamat 1 No.23, Jakarta Selatan, DKI Jakarta </p>

@@ -1,30 +1,26 @@
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import styles from './Navbars.module.css'
+import Link from 'next/link'
 
 export default function Navbars() {
   return (
     <>
       <Navbar bg="light" expand="lg" className={styles.navbars} class="d-flex">
-        <Navbar.Brand href="#home"  className={styles.brandContainer} class="mr-auto p-2">
+        <Navbar.Brand href="/"  className={styles.brandContainer} class="mr-auto p-2">
           <img src="/mampu-icon.svg" alt="Mampu Logo" className={styles.mampuLogo}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto p-2">
-            <Nav.Link href="#home" className={styles.navLink}>About Us</Nav.Link>
-            <Nav.Link href="#link" className={styles.navLink}>MAMPU Families</Nav.Link>
-            <Nav.Link href="#link" className={styles.navLink}>Meet The Team</Nav.Link>
-            <Nav.Link href="#link" className={styles.navLink}>Contact Us</Nav.Link>
+            <Nav.Link href="/About" className={styles.navLink}>About Us</Nav.Link>
+            <Nav.Link href="/Families" className={styles.navLink}>MAMPU Families</Nav.Link>
+            <Nav.Link href="/Team" className={styles.navLink}>Meet The Team</Nav.Link>
+            <Nav.Link href="/Contact" className={styles.navLink}>Contact Us</Nav.Link>
 
             <select id="language" className={styles.navLinkLanguage}>
               <option value="eng">English</option>
               <option value="ind">Indonesia</option>
             </select>
-
-            {/* <NavDropdown title={<span className={styles.navLinkLanguage}>Language</span>} className={styles.navLinkLanguage} id="basic-nav-dropdown" >
-              <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Indonesia</NavDropdown.Item>
-            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

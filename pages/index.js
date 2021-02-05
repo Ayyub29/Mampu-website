@@ -4,6 +4,19 @@ import Footer from '@components/Footer'
 import { fetchEntries } from '@util/contentfulPosts'
 import Post from '@components/Post'
 
+export async function getStaticProps() {
+  const res = await fetchEntries()
+  const posts = await res.map((p) => {
+    return p.fields
+  })
+
+  return {
+    props: {
+      posts,
+    },
+  }
+}
+
 export default function Home() {
   return (
     <div className="container">
@@ -26,16 +39,5 @@ export default function Home() {
   )
 }
 
-export async function getStaticProps() {
-  const res = await fetchEntries()
-  const posts = await res.map((p) => {
-    return p.fields
-  })
 
-  return {
-    props: {
-      posts,
-    },
-  }
-}
 

@@ -5,12 +5,12 @@ export default function Navbars() {
   return (
     <>
       <Navbar bg="light" expand="lg" className={styles.navbars} class="d-flex">
-        <Navbar.Brand href="#home"  className={styles.brandContainer}>
+        <Navbar.Brand href="#home"  className={styles.brandContainer} class="mr-auto p-2">
           <img src="/mampu-icon.svg" alt="Mampu Logo" className={styles.mampuLogo}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className="ml-auto p-2">
             <Nav.Link href="#home" className={styles.navLink}>About Us</Nav.Link>
             <Nav.Link href="#link" className={styles.navLink}>MAMPU Families</Nav.Link>
             <Nav.Link href="#link" className={styles.navLink}>Meet The Team</Nav.Link>

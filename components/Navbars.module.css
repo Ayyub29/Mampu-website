@@ -1,0 +1,19 @@
+.navbars{
+  background-color:#383769 !important;
+  justify-content: stretch;
+}
+
+.brandContainer{
+  margin-left:4%;
+  margin-right:50%;
+}
+
+.mampuLogo{
+  width:2em;
+}
+
+.navLink{
+  color:#D1E3F3 !important;
+  justify-content: space-between;
+  /* margin-right:5%; */
+}

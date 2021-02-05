@@ -13,24 +13,24 @@ export default function Footer() {
           <div class={styles.contactText}>
               <p class={styles.title}>Contact</p>
               <p class={styles.desc}> 
-                  <img src="/whatsapp-icon.svg" alt="Whatsapp Logo" className={styles.whatsappLogo} /> &#160;
+                  <img src="/whatsapp-icon.svg" alt="Whatsapp icon" className={styles.whatsappLogo} /> &#160;
                   +62-8515-515-8299 (Albert)
               </p>
           </div>
           <div class={styles.followusText}>
               <p class={styles.title}>Follow Us</p>
-              <a href="" class={styles.desc}> 
-                  <img src="/pesan-icon.svg" alt="Whatsapp Logo" className={styles.whatsappLogo} /> &#160;
+              <a href="mailto:contact@mampu.org" class={styles.desc}> 
+                  <img src="/pesan-icon.svg" alt="Email icon" className={styles.whatsappLogo} /> &#160;
                   contact@mampu.org 
               </a>
               <br></br>
-              <a href=""  class={styles.desc}> 
-                  <img src="/instagram-icon.svg" alt="Whatsapp Logo" className={styles.whatsappLogo} /> &#160;
+              <a href="https://www.instagram.com/inisiatif.mampu/"  class={styles.desc}> 
+                  <img src="/instagram-icon.svg" alt="Instagram icon" className={styles.whatsappLogo} /> &#160;
                   @inisiatif.mampu /@mampu.initiative
               </a>
               <br></br>
-              <a href=""  class={styles.desc}> 
-                  <img src="/linkedin-icon.svg" alt="Whatsapp Logo" className={styles.whatsappLogo} /> &#160;
+              <a href="https://www.linkedin.com/company/mampu-initiative/"  class={styles.desc}> 
+                  <img src="/linkedin-icon.svg" alt="Linkedin icon" className={styles.whatsappLogo} /> &#160;
                   MAMPU Initiative
               </a>
           </div>

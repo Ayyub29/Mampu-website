@@ -3,11 +3,8 @@
   max-width:100%;
   justify-content: space-around;
   background-color:#171133;
-  position: fixed;
   left: 0;
   bottom: 0;
-  /* position:absolute; */
-  /* border: 2px solid red; */
 }
 
 .footerAtas{
@@ -23,7 +20,7 @@
 }
 
 .headquarterText{
-  width:10%;
+  width:15%;
 }
 
 .headquarterText, .contactText, .followusText{
@@ -32,17 +29,27 @@
 
 .title{
   color:#9897D0;
-  font:'Roboto';
   margin:0;
 }
 
 .desc{
   color:white;
-  font:'Roboto';
   margin:0;
   text-decoration: none;
 }
 
 .whatsappLogo{
   height:1em;
+}
+
+.desc:hover{
+  text-decoration: none;
+  color:#D1E3F3;
+}
+
+.footerBawah{
+  text-align: center;
+  color: #D1E3F3;
+  margin:0 auto;
+  padding:0.5em;
 }

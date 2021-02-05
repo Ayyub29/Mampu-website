@@ -15,7 +15,7 @@ export default function Navbars() {
             <Nav.Link href="#link" className={styles.navLink}>MAMPU Families</Nav.Link>
             <Nav.Link href="#link" className={styles.navLink}>Meet The Team</Nav.Link>
             <Nav.Link href="#link" className={styles.navLink}>Contact Us</Nav.Link>
-            <NavDropdown title={<span className={styles.navLink}>Language</span>} className={styles.navLink} id="basic-nav-dropdown" >
+            <NavDropdown title={<span className={styles.navLinkLanguage}>Language</span>} className={styles.navLinkLanguage} id="basic-nav-dropdown" >
               <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Indonesia</NavDropdown.Item>
             </NavDropdown>

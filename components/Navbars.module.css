@@ -16,3 +16,15 @@
   justify-content: space-between;
   /* margin-right:5%; */
 }
+
+.navLinkLanguage{
+  color:#D1E3F3 !important;
+  justify-content: space-between;
+  width: max-content;
+}
+
+.navLink:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #D1E3F3;
+}

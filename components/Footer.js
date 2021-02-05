@@ -35,6 +35,10 @@ export default function Footer() {
               </a>
           </div>
         </div>
+        <div className={styles.footerBawah}>
+          <p>2021 Inisiatif Mampu.  All Rights Reserved</p>
+
+        </div>
       </footer>
     </>
   )

@@ -1,0 +1,25 @@
+.head{
+    background-image: url(../public/header-bg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    height: 90vh;
+    width: 100%;
+    background-position-y: bottom;
+}
+
+.desc{
+    padding: 20vh 2% 0% 50%;
+}
+.desc h1{
+    color:#FFFFFF;
+    font-size: 72px;
+}
+
+.desc p{
+    color:#FFFFFF;
+    font-size: 20px;
+    font-weight: 350;
+    
+}

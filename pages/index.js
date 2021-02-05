@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { fetchEntries } from '@util/contentfulPosts'
 
 import Navbars from '@components/Navbars'
+import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Post from '@components/Post'
 
@@ -24,6 +25,7 @@ export default function Home({ posts }) {
       </Head>
 
       <Navbars />
+      <Header />
       <main>
         <div className="posts">
           {posts.map((p) => {

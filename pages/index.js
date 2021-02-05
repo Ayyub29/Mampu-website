@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Welcome to Mampu!" />
         <div className="posts">
           {posts.map((p) => {
             return <Post key={p.date} date={p.date} image={p.image.fields} title={p.title} />

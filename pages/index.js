@@ -15,7 +15,7 @@ export default function Home({ posts }) {
       </Head>
 
       <main>
-        <Header />
+        <Header title="Welcome to UTS 2!"/>
         <div className="posts">
           {posts.map((p) => {
             return <Post key={p.date} date={p.date} image={p.image.fields} title={p.title} />

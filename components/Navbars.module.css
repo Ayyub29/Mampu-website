@@ -21,10 +21,18 @@
   color:#D1E3F3 !important;
   justify-content: space-between;
   width: max-content;
+  background-color: #383769 ;
+  border:0px;
+  outline: 0px;
+  text-align-last: right;
 }
 
 .navLink:hover{
   text-decoration: underline;
   text-decoration-thickness: 5px;
   text-decoration-color: #D1E3F3;
+}
+
+.navLinkLanguage:hover{
+  cursor: pointer;
 }

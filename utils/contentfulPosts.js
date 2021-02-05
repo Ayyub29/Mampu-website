@@ -1,5 +1,5 @@
 const space = process.env.uj5mxc4qxjxr
-const accessToken = process.env.rxnWpn5PrI8n-B_ZFUIaHSVU_Mh2t3fRKFVnMPZ0968
+const accessToken = process.env.DfDQj58NGwJzZOPjdr8T6YHhTItjiQbGAuW6ZOIvjF4
 
 const client = require('contentful').createClient({
   space: space,

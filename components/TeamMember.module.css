@@ -1,0 +1,32 @@
+.roleList ul{
+    /* display: flex; */
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 50px 120px;
+}
+
+.roleList ul li{
+    margin-bottom:20px;
+}
+
+.roleItem{
+    padding: 10px 0px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #383769 !important;
+    text-decoration: none;
+
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.roleItem::before{
+    content: url(../public/show-toggler.png);
+    padding-right: 48px;
+}
+
+.expandedContent {
+    
+}
+  

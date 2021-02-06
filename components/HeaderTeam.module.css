@@ -1,0 +1,15 @@
+.head{
+    background-image: url(../public/header-team-bg.png);
+    background-position: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.desc{
+    padding: 15vh;
+}
+.desc h1{
+    color:#FFFFFF;
+    font-size: 54px;
+}

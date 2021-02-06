@@ -4,6 +4,8 @@ import { fetchEntries } from '@util/contentfulPosts'
 
 import Navbars from '@components/Navbars'
 import Header from '@components/Header'
+import ImpactNumbers from '@components/ImpactNumbers'
+import Testimoni from '@components/Testimoni'
 import Footer from '@components/Footer'
 import Post from '@components/Post'
 
@@ -26,6 +28,8 @@ export default function Home({ posts }) {
 
       <Navbars />
       <Header />
+      <ImpactNumbers />
+      <Testimoni />
       <main>
         <div className="posts">
           {posts.map((p) => {

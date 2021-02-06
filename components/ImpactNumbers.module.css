@@ -1,0 +1,29 @@
+.numbersList ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.title h1{
+    padding: 15vh 10vh;
+    font-size: 60px;
+    font-weight: 700;
+    color: #383769;
+}
+
+.numbersList ul li h2{
+    padding: 20px 0px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.numbersList ul li p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.numbersList li{
+    max-width: 295px;
+    display: inline-block;
+    text-align: center;
+    
+}

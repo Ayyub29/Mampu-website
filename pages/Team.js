@@ -45,7 +45,7 @@ export async function getStaticProps() {
 }
 
 export default function Team ({advisors, mampuProgramme, legalDivision, donorEngagement, digitalFundraising, onGroundFundraising }){
-    console.log(legalDivision);
+    // console.log(legalDivision);
     return(
         <html>
             <Head>
@@ -63,7 +63,7 @@ export default function Team ({advisors, mampuProgramme, legalDivision, donorEng
             </Head>
             <Navbars />
             <HeaderTeam />
-            <TeamMember key={advisors} advisors={advisors} mampuProgramme={mampuProgramme} legalDivision={legalDivision} donorEngagement={donorEngagement} digitalFundraising={digitalFundraising} onGroundFundraising={onGroundFundraising}/>
+            <TeamMember advisors={advisors} mampuProgramme={mampuProgramme} legalDivision={legalDivision} donorEngagement={donorEngagement} digitalFundraising={digitalFundraising} onGroundFundraising={onGroundFundraising}/>
             <Footer />
         </html>
     )

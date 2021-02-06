@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Navbars from '@components/Navbars'
-import HeaderTeam from '@components/HeaderTeam'
-import TeamMember from '@components/TeamMember'
+import HeaderTeam from '@components/Team/HeaderTeam'
+import TeamMember from '@components/Team/TeamMember'
 import Footer from '@components/Footer'
 
 import { fetchEntries } from '@util/contentfulPosts'

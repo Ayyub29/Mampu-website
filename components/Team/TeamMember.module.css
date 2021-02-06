@@ -22,7 +22,7 @@
 }
 
 .roleItem::before{
-    content: url(../public/show-toggler.png);
+    content: url(/show-toggler.png);
     padding-right: 48px;
 }
 

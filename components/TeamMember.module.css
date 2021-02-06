@@ -27,6 +27,18 @@
 }
 
 .expandedContent {
-    
+    margin-top: 28px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    /* align-items: center; */
 }
-  
+
+.expandedContent > div {
+    background-color: #f1f1f1;
+    width: 45%;
+    margin: 10px 2.5%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}

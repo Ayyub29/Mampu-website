@@ -31,27 +31,68 @@ export default function TeamMember() {
             <ul>
                 <li>
                     <button onClick={toggle1} className={styles.roleItem}>Advisors</button>
-                    <div style={{display: show1? "block":"none"}} className={styles.expandedContent}>Halo!</div>
+                    <div style={{display: show1? "flex":"none"}} className={styles.expandedContent}>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
                 </li>
                 <li>
                     <button onClick={toggle2} className={styles.roleItem}>MampuProgramme</button>
-                    <div style={{display: show2? "block":"none"}} className={styles.expandedContent}>Halo!</div>
+                    <div style={{display: show2? "flex":"none"}} className={styles.expandedContent}>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                    </div>
                 </li>
                 <li>
                     <button onClick={toggle3} className={styles.roleItem}>On-Ground Fundraising</button>
-                    <div style={{display: show3? "block":"none"}} className={styles.expandedContent}>Halo!</div>
+                    <div style={{display: show3? "flex":"none"}} className={styles.expandedContent}>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                    </div>
                 </li>
                 <li>
                     <button onClick={toggle4} className={styles.roleItem}>Donor Engagement</button>
-                    <div style={{display: show4? "block":"none"}} className={styles.expandedContent}>Halo!</div>
+                    <div style={{display: show4? "flex":"none"}} className={styles.expandedContent}>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                    </div>
                 </li>
                 <li>
                     <button onClick={toggle5} className={styles.roleItem}>Legal Division</button>
-                    <div style={{display: show5? "block":"none"}} className={styles.expandedContent}>Halo!</div>
+                    <div style={{display: show5? "flex":"none"}} className={styles.expandedContent}>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                    </div>
                 </li>
                 <li>
                     <button onClick={toggle6} className={styles.roleItem}>Digital Fundraising</button>
-                    <div style={{display: show6? "block":"none"}} className={styles.expandedContent}>Halo!</div>
+                    <div style={{display: show6? "flex":"none"}} className={styles.expandedContent}>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                    </div>
                 </li>
             </ul>
         </div>

@@ -4,7 +4,25 @@ import HeaderTeam from '@components/HeaderTeam'
 import TeamMember from '@components/TeamMember'
 import Footer from '@components/Footer'
 
-export default function Team (){
+import { fetchEntries } from '@util/contentfulPosts'
+
+export async function getStaticProps() {
+    let res = await fetchEntries({
+      content_type: "advisors"
+    })
+    const advisors = await res.map((p) => {
+      return p.fields
+    })
+  
+    return {
+      props: {
+        advisors,
+      },
+    }
+  }
+
+export default function Team ({advisors}){
+    console.log(advisors);
     return(
         <html>
             <Head>
@@ -27,3 +45,4 @@ export default function Team (){
         </html>
     )
 }
+

@@ -10,6 +10,7 @@ import Footer from '@components/Footer'
 import Post from '@components/Post'
 
 export default function Home({ posts }) {
+  console.log(posts);
   return (
     <html>
       <Head>
@@ -41,17 +42,4 @@ export default function Home({ posts }) {
       <Footer />
     </html>
   )
-}
-
-export async function getStaticProps() {
-  const res = await fetchEntries()
-  const posts = await res.map((p) => {
-    return p.fields
-  })
-
-  return {
-    props: {
-      posts,
-    },
-  }
 }

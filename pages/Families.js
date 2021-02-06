@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Navbars from '@components/Navbars'
+import Footer from '@components/Footer'
+
 export default function Families (){
     return(
         <html>
@@ -21,8 +23,5 @@ export default function Families (){
                 <p>HELO KAMU DI Families SKRG</p>
             </div>
         </html>
-        
     )
-
-    
 }

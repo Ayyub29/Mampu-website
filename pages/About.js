@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Navbars from '@components/Navbars'
+import Footer from '@components/Footer'
+
 export default function About (){
     return(
         <html>
@@ -21,8 +23,5 @@ export default function About (){
                 <p>HELO KAMU DI ABOUT SKRG</p>
             </div>
         </html>
-        
     )
-
-    
 }

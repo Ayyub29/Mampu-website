@@ -1,11 +1,11 @@
 .testimoniCard{
     background-image: url(../public/testi-bg.png);
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     position: relative;
     box-sizing: border-box;
     height: 160vh;
     width: 100%;
-    background-position-y:2000px;
-    
+    /* background-position-y:2000px;
+    margin-top:100px; */
 }

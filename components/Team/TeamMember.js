@@ -1,7 +1,10 @@
 import styles from './TeamMember.module.css'
 import React, { useState } from 'react';
 
-export default function TeamMember() {
+import { fetchEntries } from '@util/contentfulPosts'
+
+export default function TeamMember({advisors, mampuProgramme, legalDivision, donorEngagement, digitalFundraising, onGroundFundraising }) {
+    // console.log(advisors);
     const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
@@ -32,69 +35,113 @@ export default function TeamMember() {
                 <li>
                     <button onClick={toggle1} className={styles.roleItem}>Advisors</button>
                     <div style={{display: show1? "flex":"none"}} className={styles.expandedContent}>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
+                        {advisors.map((a) =>(
+                            <div>
+                                <div className={styles.teamImage}>
+                                    <img alt={a.namaAdvisor} src={`https:${a.fotoAdvisor.fields.file.url}`}/>
+                                </div>
+                                <div className={styles.teamDesc}>
+                                    <p className={styles.teamName} >{a.namaAdvisor}</p>
+                                    <p className={styles.teamRole}>{a.jabatanAdvisor}</p>
+                                    <p className={styles.teamStory}>{a.deskripsiAdvisor}</p>
+                                </div>
+                                
+                            </div>
+                        ))}
                     </div>
                 </li>
                 <li>
-                    <button onClick={toggle2} className={styles.roleItem}>MampuProgramme</button>
+                    <button onClick={toggle2} className={styles.roleItem}>MAMPU Programme</button>
                     <div style={{display: show2? "flex":"none"}} className={styles.expandedContent}>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>5</div>
-                        <div>6</div>
+                        {mampuProgramme.map((m) =>(
+                            <div>
+                                <div className={styles.teamImage}>
+                                    <img alt={m.namaAdvisor} src={`https:${m.fotoAdvisor.fields.file.url}`}/>
+                                </div>
+                                <div className={styles.teamDesc}>
+                                    <p className={styles.teamName} >{m.namaAdvisor}</p>
+                                    <p className={styles.teamRole}>{m.jabatanAdvisor}</p>
+                                    <p className={styles.teamStory}>{m.deskripsiAdvisor}</p>
+                                </div>
+                                
+                            </div>
+                        ))}
                     </div>
                 </li>
                 <li>
                     <button onClick={toggle3} className={styles.roleItem}>On-Ground Fundraising</button>
                     <div style={{display: show3? "flex":"none"}} className={styles.expandedContent}>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>5</div>
-                        <div>6</div>
+                        {onGroundFundraising.map((o) =>(
+                            <div>
+                                <div className={styles.teamImage}>
+                                    <img alt={o.namaAdvisor} src={`https:${o.fotoAdvisor.fields.file.url}`}/>
+                                </div>
+                                <div className={styles.teamDesc}>
+                                    <p className={styles.teamName} >{o.namaAdvisor}</p>
+                                    <p className={styles.teamRole}>{o.jabatanAdvisor}</p>
+                                    <p className={styles.teamStory}>{o.deskripsiAdvisor}</p>
+                                </div>
+                                
+                            </div>
+                        ))}
                     </div>
                 </li>
                 <li>
                     <button onClick={toggle4} className={styles.roleItem}>Donor Engagement</button>
                     <div style={{display: show4? "flex":"none"}} className={styles.expandedContent}>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>5</div>
-                        <div>6</div>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>5</div>
-                        <div>6</div>
+                        {donorEngagement.map((de) =>(
+                            <div>
+                                <div className={styles.teamImage}>
+                                    <img alt={de.namaAdvisor} src={`https:${de.fotoAdvisor.fields.file.url}`}/>
+                                </div>
+                                <div className={styles.teamDesc}>
+                                    <p className={styles.teamName} >{de.namaAdvisor}</p>
+                                    <p className={styles.teamRole}>{de.jabatanAdvisor}</p>
+                                    <p className={styles.teamStory}>{de.deskripsiAdvisor}</p>
+                                </div>
+                                
+                            </div>
+                        ))}
                     </div>
                 </li>
                 <li>
                     <button onClick={toggle5} className={styles.roleItem}>Legal Division</button>
                     <div style={{display: show5? "flex":"none"}} className={styles.expandedContent}>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
+                        {legalDivision.map((l) =>(
+                            <div>
+                                <div className={styles.teamImage}>
+                                    <img alt={l.namaAdvisor} src={`https:${l.fotoAdvisor.fields.file.url}`}/>
+                                </div>
+                                <div className={styles.teamDesc}>
+                                    <p className={styles.teamName} >{l.namaAdvisor}</p>
+                                    <p className={styles.teamRole}>{l.jabatanAdvisor}</p>
+                                    <p className={styles.teamStory}>{l.deskripsiAdvisor}</p>
+                                </div>
+                                
+                            </div>
+                        ))}
                     </div>
                 </li>
                 <li>
                     <button onClick={toggle6} className={styles.roleItem}>Digital Fundraising</button>
                     <div style={{display: show6? "flex":"none"}} className={styles.expandedContent}>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
+                        {digitalFundraising.map((df) =>(
+                            <div>
+                                <div className={styles.teamImage}>
+                                    <img alt={df.namaAdvisor} src={`https:${df.fotoAdvisor.fields.file.url}`}/>
+                                </div>
+                                <div className={styles.teamDesc}>
+                                    <p className={styles.teamName} >{df.namaAdvisor}</p>
+                                    <p className={styles.teamRole}>{df.jabatanAdvisor}</p>
+                                    <p className={styles.teamStory}>{df.deskripsiAdvisor}</p>
+                                </div>
+                                
+                            </div>
+                        ))}
                     </div>
                 </li>
             </ul>
         </div>
     )
 }
+

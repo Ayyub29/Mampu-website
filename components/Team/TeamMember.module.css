@@ -30,15 +30,63 @@
     margin-top: 28px;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: DodgerBlue;
+    /* background-color: DodgerBlue; */
     /* align-items: center; */
 }
 
 .expandedContent > div {
-    background-color: #f1f1f1;
-    width: 45%;
-    margin: 10px 2.5%;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+    /* background-color: #f1f1f1; */
+    width: 530px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    /* text-align: center; */
+    /* line-height: 75px; */
+    /* font-size: 30px; */
+    display:flex;
+}
+
+.teamImage{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin:auto;
+}
+
+.teamImage img{
+    width: 100%;
+    height: auto;
+}
+
+.teamDesc{
+    margin-left: 10px;
+    width:70%;
+}
+
+.teamName{
+    color:#171133 !important;
+    font: 'Roboto';
+    font-size:xx-large;
+    font-weight: 700;
+    margin:5px;
+}
+
+.teamRole{
+    color:#383769 !important;
+    font: 'Roboto';
+    font-style: italic;
+    font-size:x-large;
+    font-weight: 400;
+    margin:5px;
+}
+
+.teamStory{
+    color:black;
+    font: bold 'Roboto';
+    margin:5px;
+    font-size:smaller;
+    /* font-weight: 500; */
 }

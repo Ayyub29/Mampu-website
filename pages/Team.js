@@ -4,25 +4,48 @@ import HeaderTeam from '@components/Team/HeaderTeam'
 import TeamMember from '@components/Team/TeamMember'
 import Footer from '@components/Footer'
 
-import { fetchEntries } from '@util/contentfulPosts'
+import { fetchAdvisors, fetchMampuprogramme, fetchLegaldivision, fetchDonorengagement, fetchDigitalfundraising, fetchOngroundfundraising } from '@util/contentfulPosts'
 
 export async function getStaticProps() {
-    let res = await fetchEntries({
-      content_type: "advisors"
+    let res1 = await fetchAdvisors()
+    const advisors = await res1.map((a) => {
+      return a.fields
     })
-    const advisors = await res.map((p) => {
-      return p.fields
+    let res2 = await fetchMampuprogramme()
+    const mampuProgramme = await res2.map((a) => {
+      return a.fields
+    })
+    let res3 = await fetchLegaldivision()
+    const legalDivision = await res3.map((a) => {
+      return a.fields
+    })
+    let res4 = await fetchDonorengagement()
+    const donorEngagement = await res4.map((a) => {
+      return a.fields
+    })
+    let res5 = await fetchDigitalfundraising()
+    const digitalFundraising = await res5.map((a) => {
+      return a.fields
+    })
+    let res6 = await fetchOngroundfundraising()
+    const onGroundFundraising = await res6.map((a) => {
+      return a.fields
     })
   
     return {
       props: {
         advisors,
+        mampuProgramme,
+        legalDivision,
+        donorEngagement,
+        digitalFundraising,
+        onGroundFundraising,
       },
     }
-  }
+}
 
-export default function Team ({advisors}){
-    console.log(advisors);
+export default function Team ({advisors, mampuProgramme, legalDivision, donorEngagement, digitalFundraising, onGroundFundraising }){
+    console.log(legalDivision);
     return(
         <html>
             <Head>
@@ -40,7 +63,7 @@ export default function Team ({advisors}){
             </Head>
             <Navbars />
             <HeaderTeam />
-            <TeamMember />
+            <TeamMember key={advisors} advisors={advisors} mampuProgramme={mampuProgramme} legalDivision={legalDivision} donorEngagement={donorEngagement} digitalFundraising={digitalFundraising} onGroundFundraising={onGroundFundraising}/>
             <Footer />
         </html>
     )

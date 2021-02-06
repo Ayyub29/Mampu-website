@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbars from '@components/Navbars'
+import Footer from '@components/Footer'
 export default function Contact (){
     return(
         <html>
@@ -20,6 +21,7 @@ export default function Contact (){
             <div>
                 <p>HELO KAMU DI Contact SKRG</p>
             </div>
+            <Footer />
         </html>
         
     )

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbars from '@components/Navbars'
+import Footer from '@components/Footer'
 export default function Team (){
     return(
         <html>
@@ -20,6 +21,7 @@ export default function Team (){
             <div>
                 <p>HELO KAMU DI Team SKRG</p>
             </div>
+            <Footer />
         </html>
        
     )

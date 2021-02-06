@@ -3,7 +3,7 @@
     
 }
 .testimoniTop{
-    background-image: url(../public/testi-bg-top.png);
+    background-image: url(/testi-bg-top.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -14,7 +14,7 @@
     
 }
 .testimoniBottom{
-    background-image: url(../public/testi-bg-bottom.png);
+    background-image: url(/testi-bg-bottom.png);
     background-position: center;
     background-size: cover;
     position: relative;

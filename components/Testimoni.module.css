@@ -1,11 +1,29 @@
 .testimoniCard{
-    background-image: url(../public/testi-bg.png);
+    background-color: #D1E3F3;
+    
+}
+.testimoniTop{
+    background-image: url(../public/testi-bg-top.png);
     background-position: center;
     background-size: cover;
     position: relative;
     box-sizing: border-box;
-    height: 160vh;
+    height: 30vh;
     width: 100%;
-    background-position-y:2000px;
+
     
+}
+.testimoniBottom{
+    background-image: url(../public/testi-bg-bottom.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    height: 30vh;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.testimoniCenter{
+    height: 50vh;
 }

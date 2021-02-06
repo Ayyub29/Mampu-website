@@ -2,16 +2,17 @@
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+    margin: 0px 100px;
 }
 .title h1{
-    padding: 15vh 10vh;
-    font-size: 60px;
+    padding: 15vh 15vh;
+    font-size: 55px;
     font-weight: 700;
     color: #383769;
 }
 
 .numbersList ul li h2{
-    padding: 20px 0px;
+    padding: 10px 0px;
     font-size: 40px;
     font-weight: 700;
 }
@@ -25,5 +26,10 @@
     max-width: 295px;
     display: inline-block;
     text-align: center;
-    
+}
+
+.verticalLine{
+    border-left: 1.5px solid rgba(0, 0, 0, 0.5);
+    height: 150px;
+    margin-top: 5%;
 }

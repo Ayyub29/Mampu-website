@@ -1,6 +1,9 @@
 .navbars{
+  
   background-color:#383769 !important;
-  justify-content: stretch;
+  width:100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .brandContainer{

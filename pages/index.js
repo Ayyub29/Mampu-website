@@ -30,13 +30,13 @@ export default function Home({ posts }) {
       <Header />
       <ImpactNumbers />
       <Testimoni />
-      <main>
+      {/* <main>
         <div className="posts">
           {posts.map((p) => {
             return <Post key={p.date} date={p.date} image={p.image.fields} title={p.title} />
           })}
         </div>
-      </main>
+      </main> */}
 
       <Footer />
     </html>

@@ -24,7 +24,7 @@
 .testimoniCenter{
     height: 100vh;
     transition: 300ms;
-    padding: 15vh;
+    padding: 0vh 15vh;
 }
 
 .title h1{
@@ -43,9 +43,9 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
     height: 100%;
-    max-width: 500px;
+    max-width: 450px;
     text-align: center;
-    margin: 16px;
+    margin-right: 30px;
 }
 
 .testiImage{

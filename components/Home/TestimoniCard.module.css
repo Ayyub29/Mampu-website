@@ -1,8 +1,8 @@
 .testiCard{
     border-radius: 20px;
     display: inline-block;
-    padding: 15px;
-    padding-bottom: 0px;
+    padding: 30px;
+    padding-bottom: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
@@ -10,6 +10,7 @@
     max-width: 450px;
     text-align: center;
     margin-right: 30px;
+    user-select: none;
 }
 
 .testiImage{

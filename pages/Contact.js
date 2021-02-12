@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbars from '@components/Navbars'
 import Footer from '@components/Footer'
+import Pending from '@components/Pending/Pending'
 
 export default function Contact (){
     return(
@@ -19,9 +20,7 @@ export default function Contact (){
                 />
             </Head>
             <Navbars />
-            <div>
-                <p>HELO KAMU DI Contact SKRG</p>
-            </div>
+            <Pending/>
         </html>
     )
 }

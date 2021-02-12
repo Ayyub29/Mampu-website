@@ -1,0 +1,10 @@
+.comingSoon{
+    padding: 35vh 0px;
+    text-align: center;
+    overflow-y: hidden;
+}
+.comingSoon h1{
+    font-size: 80px;
+    font-weight: 700;
+    color: #383769;
+}

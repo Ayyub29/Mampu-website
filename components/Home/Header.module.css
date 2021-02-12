@@ -7,19 +7,46 @@
     height: 100vh;
     width: 100%;
     background-position-y: bottom;
+    display: grid;
+    grid-template-columns: auto;
 }
 
 .desc{
-    padding: 30vh 2% 0% 50%;
+    padding: 30vh 20vh;
 }
 .desc h1{
     color:#FFFFFF;
-    font-size: 72px;
+    font-size: 120px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    animation: fadeIn 2s forwards;
 }
 
 .desc p{
-    color:#FFFFFF;
-    font-size: 20px;
-    font-weight: 350;
-    
+    color:#D1E3F3;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    animation: fadeOut 4s forwards;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeOut{
+    from{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbars from '@components/Navbars'
 import Footer from '@components/Footer'
+import VisiMisi from '@components/About/VisiMisi'
 
 export default function About (){
     return(
@@ -19,9 +20,8 @@ export default function About (){
                 />
             </Head>
             <Navbars />
-            <div>
-                <p>HELO KAMU DI ABOUT SKRG</p>
-            </div>
+            <VisiMisi/>
+            <Footer />
         </html>
     )
 }

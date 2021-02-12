@@ -1,0 +1,22 @@
+.title h1{
+    padding: 15vh 0vh 0vh 15vh;
+    font-size: 55px;
+    font-weight: 700;
+    color: #383769;
+}
+.valuess{
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+    padding: 50px 30vh;
+    padding-bottom: 0px;
+    gap: 80px;
+}
+.oneValue h2{
+    color:#383769;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.oneValue span{
+    color:#383769;
+    font-weight: 700;
+}

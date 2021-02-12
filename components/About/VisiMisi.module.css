@@ -1,0 +1,75 @@
+.about{
+    overflow: hidden;
+}
+.headerVisiMisi{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top:20px;
+}
+.visi{
+    background-image:  linear-gradient(rgba(23, 17, 51, 0.85),rgba(23, 17, 51, 0.85)),url(/pak-esron-visi.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    background-position-y: top;
+    text-align: center;
+    padding-top: 50vh;
+    padding: 45vh 90px;
+    color:rgba(255, 255, 255, 1);
+}
+.misi{
+    background-image: linear-gradient(rgba(56, 55, 105, 0.85),rgba(56, 55, 105, 0.85)),url(/pak-agus-misi.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    background-position-y: top;
+    text-align: center;
+    padding: 45vh 90px;
+    color:rgba(255, 255, 255, 1);
+}
+.quotesTengah{
+    background-image: url(/ombak-tengah.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    background-position-y: top;
+    margin-top: -60px;
+    z-index: 1;
+    text-align: center;
+    
+}
+
+.quotesTengah p{
+    padding: 80px 0px;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(56, 55, 105, 1);
+
+}
+.quotesTengah span{
+    font-size: 20px;
+}
+
+.openQuote{
+    margin: 56px 0px auto 200px;
+}
+
+.closeQuote{
+    margin: 110px 200px auto 0px;
+}
+.ombakKanan{
+    margin-left: 37vw;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+.ombakImg{
+    width: 800px;
+}

@@ -1,8 +1,10 @@
 .numbersList ul{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     list-style: none;
     justify-content: space-evenly;
     margin: 0px 100px;
+    gap:5px;
 }
 .title h1{
     padding: 15vh 15vh;

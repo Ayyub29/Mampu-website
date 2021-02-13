@@ -90,3 +90,8 @@
     font-size:smaller;
     /* font-weight: 500; */
 }
+@media only screen and (max-width: 1024px) {
+    .roleList{
+        margin-bottom: 22vh;
+    }
+}

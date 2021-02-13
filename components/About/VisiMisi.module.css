@@ -3,7 +3,7 @@
 }
 .headerVisiMisi{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     padding-top:20px;
 }
 .visi{
@@ -39,7 +39,7 @@
     box-sizing: border-box;
     width: 100%;
     display: grid;
-    grid-template-columns: 10vw auto 10vw;
+    grid-template-columns: min-content auto min-content;
     background-position-y: top;
     margin-top: -60px;
     z-index: 1;
@@ -75,7 +75,54 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .misi, .visi{
+        padding: 45vh 40px;
+    }
     
+    .openQuote{
+        margin: 20px 0px auto 60px;
+    }
+    .closeQuote{
+        margin: 90px 60px auto 0px;
+    }
+
+    .quotesTengah p{
+        padding: 70px 0px 50px;
+        font-weight: 700;
+        font-size: 24px;
+        color: rgba(56, 55, 105, 1);
+    
+    }
+    
+
+}
+@media only screen and (max-width: 768px) {
+    
+    .openQuote{
+        margin: 10px 0px auto 20px;
+        width: 60px;
+     
+    }
+    .closeQuote{
+        margin: 65px 20px auto 0px;
+        width: 60px;
+    }
+
+    .quotesTengah p{
+        padding: 45px 0px 50px;
+        font-weight: 700;
+        font-size: 24px;
+        color: rgba(56, 55, 105, 1);
+    
+    }
+    .quotesTengah{
+        background-size: 150%;
+        background-repeat: no-repeat;
+        
+        
+    }
+    
+
 }
 @media only screen and (min-width: 320px) {
   

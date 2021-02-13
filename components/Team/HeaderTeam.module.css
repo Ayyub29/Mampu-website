@@ -18,14 +18,16 @@
 
 @media only screen and (max-width: 1024px) {
     .head{
-        height: 20vh;
+        height: 30vh;
     }
+
     .desc{
-        padding: 8vh 5vh;
+        padding-top: 12vh;
+        padding-left: 5vh;
     }
 
     .desc h1{
         color:#FFFFFF;
-        font-size: 16px;
+        font-size: 40px;
     }
 }

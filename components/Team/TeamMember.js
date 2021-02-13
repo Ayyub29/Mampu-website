@@ -69,7 +69,7 @@ export default function TeamMember({advisors, mampuProgramme, legalDivision, don
                     </div>
                 </li>
                 <li>
-                    <button onClick={toggle3} className={styles.roleItem}>On-Ground Fundraising</button>
+                    <button onClick={toggle3} className={styles.roleItem}>Offline Fundraising</button>
                     <div style={{display: show3? "flex":"none"}} className={styles.expandedContent}>
                         {onGroundFundraising.map((o) =>(
                             <div>
@@ -87,7 +87,7 @@ export default function TeamMember({advisors, mampuProgramme, legalDivision, don
                     </div>
                 </li>
                 <li>
-                    <button onClick={toggle4} className={styles.roleItem}>Donor Engagement</button>
+                    <button onClick={toggle4} className={styles.roleItem}>Social Media</button>
                     <div style={{display: show4? "flex":"none"}} className={styles.expandedContent}>
                         {donorEngagement.map((de) =>(
                             <div>
@@ -123,7 +123,7 @@ export default function TeamMember({advisors, mampuProgramme, legalDivision, don
                     </div>
                 </li>
                 <li>
-                    <button onClick={toggle6} className={styles.roleItem}>Digital Fundraising</button>
+                    <button onClick={toggle6} className={styles.roleItem}>Online Fundraising</button>
                     <div style={{display: show6? "flex":"none"}} className={styles.expandedContent}>
                         {digitalFundraising.map((df) =>(
                             <div>

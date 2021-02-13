@@ -1,9 +1,13 @@
 .head{
     background-image: url(/header-team-bg.png);
-    background-position: left;
+    background-position-x: left;
+    background-position-y: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
+    margin-bottom: -50px;
     height: 40vh;
+
+    
 }
 
 .desc{
@@ -12,4 +16,12 @@
 .desc h1{
     color:#FFFFFF;
     font-size: 54px;
+}
+@media only screen and (max-width: 1024px) {
+    .head{
+        height: 20vh;
+    }
+    .desc{
+        padding: 8vh 5vh;
+    }
 }

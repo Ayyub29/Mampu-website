@@ -1,5 +1,5 @@
 .title h1{
-    padding: 10vh 0vh 0vh 15vh;
+    padding: 10vh 0vh 0vh 10vw;
     font-size: 55px;
     font-weight: 700;
     color: #383769;
@@ -7,7 +7,7 @@
 .valuess{
     display: grid;
     grid-template-columns: 3fr 4fr 3fr;
-    padding: 50px 30vh;
+    padding: 50px 15vw;
     padding-bottom: 0px;
     gap: 80px;
 }
@@ -19,4 +19,17 @@
 .oneValue span{
     color:#383769;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 1024px) {
+    .title h1{
+        padding: 5vh 0vh 0vh 10vw;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .valuess{
+        padding: 50px 8vw;
+        padding-bottom: 0px;
+        gap: 50px;
+    }
 }

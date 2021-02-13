@@ -7,7 +7,7 @@ import Header from '@components/Home/Header'
 import ImpactNumbers from '@components/Home/ImpactNumbers'
 import Testimoni from '@components/Home/Testimoni'
 import Footer from '@components/Footer'
-import Post from '@components/Post'
+
 
 export default function Home({ posts }) {
   console.log(posts);

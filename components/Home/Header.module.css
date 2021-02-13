@@ -7,12 +7,10 @@
     height: 100vh;
     width: 100%;
     background-position-y: bottom;
-    display: grid;
-    grid-template-columns: auto;
 }
 
 .desc{
-    padding: 30vh 20vh;
+    padding: 30vh 20vw;
 }
 .desc h1{
     color:#FFFFFF;
@@ -48,5 +46,16 @@
     to{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@media only screen and (min-width: 320px) {
+    /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+    .desc h1{
+     
+        font-size: calc(50px + 70 * ((100vw - 320px) / 680));
+        
+    }
+    .desc p{
+        font-size: calc(12px + 12 * ((100vw - 320px) / 680));
     }
 }

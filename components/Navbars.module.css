@@ -43,3 +43,9 @@
 .navLinkLanguage:hover{
   cursor: pointer;
 }
+
+@media only screen and (max-width: 988px) {
+  .navLinkLanguage{
+    text-align-last: left;
+  }
+}

@@ -18,18 +18,40 @@
     box-sizing: border-box;
     height: 30vh;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .testimoniCenter{
     height: 100vh;
     transition: 300ms;
-    padding: 0vh 15vh;
+    padding: 0vh 15vw;
 }
 
 .title h1{
-    padding: 10vh 15vh 0vh;
+    padding: 10vh 10vw 0vh;
     font-size: 55px;
     font-weight: 700;
     color: #383769;
+}
+
+@media only screen and (max-width: 1024px) {
+    .testimoniCenter{
+        height: 50vh;
+    }
+    .title h1{
+        padding: 0vh 10vw 0vh;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+    .title h1{
+        padding: 0vh 10vw 8vh;
+    }
+}
+@media only screen and (min-width: 320px) {
+    /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+    .title h1{
+        font-size: calc(40px + 15 * ((100vw - 320px) / 680));
+    }
+    
 }

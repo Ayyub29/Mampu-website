@@ -4,7 +4,7 @@ export default function HeaderTeam() {
   return (
       <div className={styles.head}>
           <div className={styles.desc}>
-            <h1>Meet The Team</h1>
+            <h1>Our Team</h1>
           </div>
       </div>
   )

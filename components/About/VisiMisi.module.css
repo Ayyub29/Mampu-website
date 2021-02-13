@@ -39,7 +39,7 @@
     box-sizing: border-box;
     width: 100%;
     display: grid;
-    grid-template-columns: min-content auto min-content;
+    grid-template-columns: 10vw auto 10vw;
     background-position-y: top;
     margin-top: -60px;
     z-index: 1;
@@ -59,17 +59,28 @@
 }
 
 .openQuote{
-    margin: 56px 0px auto 200px;
+    margin: 56px 0px auto 50px;
 }
 
 .closeQuote{
-    margin: 110px 200px auto 0px;
+    margin: 110px 50px auto 0px;
 }
 .ombakKanan{
-    margin-left: 37vw;
+    margin-left: 40vw;
     margin-top: -50px;
     margin-bottom: -50px;
 }
 .ombakImg{
     width: 800px;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+}
+@media only screen and (min-width: 320px) {
+  
+    .quotesTengah span{
+        font-size: calc(10px + 10 * ((100vw - 320px) / 680));
+    }
+    
 }

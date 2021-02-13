@@ -34,8 +34,25 @@
     /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
     .testiPost{
      
-        font-size: calc(12px + 12 * ((100vw - 320px) / 680));
+        font-size: calc(10px + 6 * ((100vw - 320px) / 680));
         
     }
+    .testiName{
+        font-size: calc(20px + 10 * ((100vw - 320px) / 680));
+    }
+    .testiContent{
+        font-size: calc(10px + 4 * ((100vw - 320px) / 680));
+    }
     
+}
+@media only screen and (max-width: 414px) {
+    .testiImage{
+        width: 100px;
+    }
+    .testiCard{
+        max-width: 220px;
+    }
+    .thinLine{
+        width: 120px;
+    }
 }

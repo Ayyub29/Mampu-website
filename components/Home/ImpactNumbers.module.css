@@ -39,10 +39,10 @@
 @media only screen and (min-width: 320px) {
     /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
     .title h1{
-        font-size: calc(40px + 15 * ((100vw - 320px) / 680));
+        font-size: calc(25px + 25 * ((100vw - 320px) / 680));
     }
     .numbersList ul li h2{
-        font-size: calc(25px + 15 * ((100vw - 320px) / 680));
+        font-size: calc(20px + 20 * ((100vw - 320px) / 680));
     }
     .numbersList ul li p{
         font-size: calc(10px + 10 * ((100vw - 320px) / 680));
@@ -61,5 +61,22 @@
     .numbersList ul{
         margin: 0px 50px 20px;
       
+    }
+}
+@media only screen and (max-width: 414px) {
+    .numbersIcon{
+        width: 50px;
+    }
+    .title h1{
+        padding: 8vh 10vw;
+    }
+    .numbersList ul{
+        gap: 3px;
+        margin: 0px 10px 20px;
+      
+    }
+    .numbersList ul li h2{
+        padding: 5px 0px;
+        
     }
 }

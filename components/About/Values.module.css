@@ -49,10 +49,13 @@
         font-size: calc(12px + 20 * ((100vw - 320px) / 680));
     }
     .oneValue p{
-        font-size: calc(10px + 10 * ((100vw - 320px) / 680));
+        font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+    }
+    .oneValue span{
+        font-size: calc(10px + 6 * ((100vw - 320px) / 680));
     }
     .title h1{
-        font-size: calc(30px + 25 * ((100vw - 320px) / 680));
+        font-size: calc(30px + 20 * ((100vw - 320px) / 680));
     }
     
 }

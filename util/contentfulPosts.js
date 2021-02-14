@@ -6,6 +6,16 @@ const client = require('contentful').createClient({
   accessToken: accessToken,
 })
 
+
+// mampuProgramme
+export async function fetchTestimoni() {
+  const entries = await client.getEntries({
+    content_type : "testimoni"
+  })
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
+
 // advisors
 export async function fetchAdvisors() {
   const entries = await client.getEntries({

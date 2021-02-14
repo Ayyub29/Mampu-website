@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { fetchEntries } from '@util/contentfulPosts'
+import { fetchTestimoni } from '@util/contentfulPosts'
 
 import Navbars from '@components/Navbars'
 import Header from '@components/Home/Header'
@@ -8,9 +8,21 @@ import ImpactNumbers from '@components/Home/ImpactNumbers'
 import Testimoni from '@components/Home/Testimoni'
 import Footer from '@components/Footer'
 
+export async function getStaticProps() {
+  let res1 = await fetchTestimoni()
+  const testimoni = await res1.map((a) => {
+    return a.fields
+  })
 
-export default function Home({ posts }) {
-  console.log(posts);
+  return {
+    props: {
+      testimoni,
+    },
+  }
+}
+
+export default function Home({ testimoni }) {
+  console.log(testimoni);
   return (
     <html>
       <Head>
@@ -30,14 +42,7 @@ export default function Home({ posts }) {
       <Navbars />
       <Header />
       <ImpactNumbers />
-      <Testimoni />
-      {/* <main>
-        <div className="posts">
-          {posts.map((p) => {
-            return <Post key={p.date} date={p.date} image={p.image.fields} title={p.title} />
-          })}
-        </div>
-      </main> */}
+      <Testimoni testimoni={testimoni}  />
 
       <Footer />
     </html>

@@ -32,13 +32,15 @@
     .valuess{
         padding: 50px 10vw;
         gap: 50px;
+        
     }
 }
 @media only screen and (max-width: 414px) {
-  
+    
     .valuess{
         display: flex;
         flex-wrap: wrap;
+        text-align: center;
     }
 }
 @media only screen and (max-width: 768px) {

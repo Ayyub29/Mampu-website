@@ -137,14 +137,14 @@
     /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
     .teamName{
      
-        font-size: calc(20px + 30 * ((100vw - 320px) / 680));
+        font-size: calc(20px + 20 * ((100vw - 320px) / 680));
         
     }
     .teamRole{
-        font-size: calc(15px + 10 * ((100vw - 320px) / 680));
+        font-size: calc(15px + 5 * ((100vw - 320px) / 680));
     }
     .teamStory{
-        font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+        font-size: calc(12px + 4 * ((100vw - 320px) / 680));
     }
     
 }

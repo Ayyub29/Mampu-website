@@ -33,7 +33,7 @@ export default function TeamMember({advisors, mampuProgramme, legalDivision, don
         <div className={styles.roleList}>
             <ul>
                 <li>
-                    <button onClick={toggle1} className={styles.roleItem}>Advisors</button>
+                    <button onClick={toggle1} className={styles.roleItem}> <img src="/show-toggler.png" style={{transform: show1? "rotate(90deg)":"none"}} className={styles.roleToggler}/> Advisors</button>
                     <div style={{display: show1? "flex":"none"}} className={styles.expandedContent}>
                         {advisors.map((a) =>(
                             <div>
@@ -51,7 +51,7 @@ export default function TeamMember({advisors, mampuProgramme, legalDivision, don
                     </div>
                 </li>
                 <li>
-                    <button onClick={toggle2} className={styles.roleItem}>MAMPU Programme</button>
+                    <button onClick={toggle2} className={styles.roleItem}> <img src="/show-toggler.png" style={{transform: show2? "rotate(90deg)":"none"}} className={styles.roleToggler}/> MAMPU Programme</button>
                     <div style={{display: show2? "flex":"none"}} className={styles.expandedContent}>
                         {mampuProgramme.map((m) =>(
                             <div>
@@ -69,7 +69,7 @@ export default function TeamMember({advisors, mampuProgramme, legalDivision, don
                     </div>
                 </li>
                 <li>
-                    <button onClick={toggle3} className={styles.roleItem}>Offline Fundraising</button>
+                    <button onClick={toggle3} className={styles.roleItem}> <img src="/show-toggler.png" style={{transform: show3? "rotate(90deg)":"none"}} className={styles.roleToggler}/> Offline Fundraising</button>
                     <div style={{display: show3? "flex":"none"}} className={styles.expandedContent}>
                         {onGroundFundraising.map((o) =>(
                             <div>
@@ -87,7 +87,7 @@ export default function TeamMember({advisors, mampuProgramme, legalDivision, don
                     </div>
                 </li>
                 <li>
-                    <button onClick={toggle4} className={styles.roleItem}>Social Media</button>
+                    <button onClick={toggle4} className={styles.roleItem}> <img src="/show-toggler.png" style={{transform: show4? "rotate(90deg)":"none"}} className={styles.roleToggler}/> Social Media</button>
                     <div style={{display: show4? "flex":"none"}} className={styles.expandedContent}>
                         {donorEngagement.map((de) =>(
                             <div>
@@ -105,7 +105,7 @@ export default function TeamMember({advisors, mampuProgramme, legalDivision, don
                     </div>
                 </li>
                 <li>
-                    <button onClick={toggle5} className={styles.roleItem}>Legal Division</button>
+                    <button onClick={toggle5} className={styles.roleItem}> <img src="/show-toggler.png" style={{transform: show5? "rotate(90deg)":"none"}} className={styles.roleToggler}/> Legal Division</button>
                     <div style={{display: show5? "flex":"none"}} className={styles.expandedContent}>
                         {legalDivision.map((l) =>(
                             <div>
@@ -123,7 +123,7 @@ export default function TeamMember({advisors, mampuProgramme, legalDivision, don
                     </div>
                 </li>
                 <li>
-                    <button onClick={toggle6} className={styles.roleItem}>Online Fundraising</button>
+                    <button onClick={toggle6} className={styles.roleItem}> <img src="/show-toggler.png" style={{transform: show6? "rotate(90deg)":"none"}} className={styles.roleToggler}/> Online Fundraising</button>
                     <div style={{display: show6? "flex":"none"}} className={styles.expandedContent}>
                         {digitalFundraising.map((df) =>(
                             <div>

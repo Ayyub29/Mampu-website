@@ -12,6 +12,7 @@ export default function Navbars() {
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto p-2">
+          <Nav.Link href="/" className={styles.navLink}>Home</Nav.Link>
             <Nav.Link href="/About" className={styles.navLink}>About Us</Nav.Link>
             {/* <Nav.Link href="/Families" className={styles.navLink}>MAMPU Families</Nav.Link> */}
             <Nav.Link href="/Team" className={styles.navLink}>Our Team</Nav.Link>

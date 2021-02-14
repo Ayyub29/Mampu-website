@@ -9,6 +9,7 @@ export default function Values() {
         <div className={styles.valuess}>
             <div className={styles.oneValue}>
                 <img src="/value1.svg" alt="value-1" className={styles.valueIcon} />
+                <div></div>
                 <h2>Sustainability</h2>
                 <p>To us, making real impact is an imperative. We are not satisfied with just providing aid on a one-time basis, but want to help in such a way that families can sustain themselves in the long run. We know that COVID-19’s impacts will last for some time, and we want to help families get ready to brave the storm on their own. This is why our program focuses not just on meeting families’ needs now, but also providing workers with the tools they need to survive and thrive independently in the long run.</p>
             </div>

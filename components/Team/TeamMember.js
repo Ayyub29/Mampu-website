@@ -5,7 +5,7 @@ import { fetchEntries } from '@util/contentfulPosts'
 
 export default function TeamMember({advisors, mampuProgramme, legalDivision, donorEngagement, digitalFundraising, onGroundFundraising }) {
     // console.log(advisors);
-    const [show1, setShow1] = useState(false);
+    const [show1, setShow1] = useState(true);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
     const [show4, setShow4] = useState(false);

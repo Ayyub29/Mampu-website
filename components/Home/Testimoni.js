@@ -33,30 +33,24 @@ export default function ImpactNumbers() {
         </div>
         <Carousel responsive={responsive} className={styles.testimoniCenter}>
           <TestimoniCard 
-            testiName={"Jane Doe"} 
-            testiPost={"Donors"} 
-            testiContent={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."}>
+            testiImg="/adhanjo.png"
+            testiName={"Adhani R. Sutarjo"} 
+            testiPost={"Volunteer"} 
+            testiContent={"Being a part of MAMPU is such a wonderful experience; I am able to work professionally with a friendly and fun environment. It also feels amazing to give positive impacts for the society by helping the vulnerable families affected by the pandemic"}>
           </TestimoniCard>
           <TestimoniCard 
-            testiName={"Jane Doe"} 
-            testiPost={"Donors"} 
-            testiContent={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."}>
+            testiImg="/elaine.jpg"
+            testiName={"Elaine Indra"} 
+            testiPost={"Volunteer"} 
+            testiContent={"Being a part of MAMPU exposed me to the realities of the underprivileged people. I got to work with an amazing team who are all very amazing in alleviating poverty in Indonesia and I got to meet a lot of new friends."}>
           </TestimoniCard>
           <TestimoniCard 
-            testiName={"Jane Doe"} 
-            testiPost={"Donors"} 
-            testiContent={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."}>
+            testiImg="/Andy.jpg"
+            testiName={"Andy"} 
+            testiPost={"Recipient"} 
+            testiContent={"“I am very thankful for all the donors and MAMPU team for helping me. MAMPU has been a huge blessing and taught me how to stand on my own two feet. The mentors are very friendly, supportive, and insightful. Thank you.”"}>
           </TestimoniCard>
-          <TestimoniCard 
-            testiName={"Jane Doe"} 
-            testiPost={"Donors"} 
-            testiContent={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."}>
-          </TestimoniCard>
-          <TestimoniCard 
-            testiName={"Jane Doe"} 
-            testiPost={"Donors"} 
-            testiContent={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."}>
-          </TestimoniCard>
+         
           <br></br>
           
         </Carousel>

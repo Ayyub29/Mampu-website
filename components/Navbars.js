@@ -13,13 +13,13 @@ export default function Navbars() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto p-2">
             <Nav.Link href="/About" className={styles.navLink}>About Us</Nav.Link>
-            <Nav.Link href="/Families" className={styles.navLink}>MAMPU Families</Nav.Link>
+            {/* <Nav.Link href="/Families" className={styles.navLink}>MAMPU Families</Nav.Link> */}
             <Nav.Link href="/Team" className={styles.navLink}>Our Team</Nav.Link>
-            <Nav.Link href="/Contact" className={styles.navLink}>Contact Us</Nav.Link>
+            {/* <Nav.Link href="/Contact" className={styles.navLink}>Contact Us</Nav.Link> */}
 
             <select id="language" className={styles.navLinkLanguage}>
               <option value="eng">English</option>
-              <option value="ind">Indonesia</option>
+              {/* <option value="ind">Indonesia</option> */}
             </select>
           </Nav>
         </Navbar.Collapse>

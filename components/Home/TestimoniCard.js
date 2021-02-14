@@ -1,10 +1,10 @@
 import styles from './TestimoniCard.module.css'
 
 
-const TestimoniCard = ({ testiName, testiPost, testiContent  }) => {
+const TestimoniCard = ({ testiImg, testiName, testiPost, testiContent  }) => {
     return(
         <div className={styles.testiCard}>
-            <img src="/testi1.png" alt="testi-img" className={styles.testiImage} />
+            <img src={testiImg} alt="testi-img" className={styles.testiImage} />
             <h3 className={styles.testiName}>{testiName}</h3>
             <i className={styles.testiPost}>{testiPost}</i>
             <hr className={styles.thinLine}></hr>

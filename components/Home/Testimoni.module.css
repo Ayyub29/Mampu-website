@@ -22,7 +22,7 @@
 }
 
 .testimoniCenter{
-    height: 100vh;
+    height: 40vw;
     transition: 300ms;
     padding: 0vh 15vw;
 }
@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 1024px) {
     .testimoniCenter{
-        height: 50vh;
+        height: 70vw;
     }
     .title h1{
         padding: 0vh 10vw 0vh;
@@ -44,7 +44,7 @@
 }
 @media only screen and (max-width: 768px) {
     .testimoniCenter{
-        height: 50vh;
+        height: 50vw;
     }
     .title h1{
         padding: 0vh 10vw 8vh;
@@ -52,16 +52,17 @@
 }
 @media only screen and (max-width: 414px) {
     .title h1{
-        padding: 0vh 10vw 8vh;
+        padding: 0vh 10vw 5vh;
     }
     .testimoniCenter{
-        height: 80vh;
+        height: 100vw;
+        padding: 0vh 3vw;
     }
 }
 @media only screen and (min-width: 320px) {
     /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
     .title h1{
-        font-size: calc(40px + 10 * ((100vw - 320px) / 680));
+        font-size: calc(30px + 20 * ((100vw - 320px) / 680));
     }
     
 }

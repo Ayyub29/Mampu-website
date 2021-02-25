@@ -1,0 +1,9 @@
+.formContainer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+    gap:10px;
+}
+.sendBtnContainer{
+    margin:25px;
+}

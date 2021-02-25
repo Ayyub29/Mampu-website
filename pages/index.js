@@ -7,6 +7,7 @@ import Header from '@components/Home/Header'
 import ImpactNumbers from '@components/Home/ImpactNumbers'
 import Testimoni from '@components/Home/Testimoni'
 import Footer from '@components/Footer'
+import Newsletter from '@components/Home/Newsletter'
 
 export async function getStaticProps() {
   let res1 = await fetchTestimoni()
@@ -43,6 +44,7 @@ export default function Home({ testimoni }) {
       <Header />
       <ImpactNumbers />
       <Testimoni testimoni={testimoni}  />
+      <Newsletter/>
 
       <Footer />
     </html>

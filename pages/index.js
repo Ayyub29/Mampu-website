@@ -23,7 +23,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ testimoni }) {
-  console.log(testimoni);
+  // console.log(testimoni);
   return (
     <html>
       <Head>
@@ -43,8 +43,8 @@ export default function Home({ testimoni }) {
       <Navbars />
       <Header />
       <ImpactNumbers />
+      <Newsletter />
       <Testimoni testimoni={testimoni}  />
-      <Newsletter/>
 
       <Footer />
     </html>

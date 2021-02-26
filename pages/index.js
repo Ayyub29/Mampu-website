@@ -43,7 +43,7 @@ export default function Home({ testimoni }) {
       <Navbars />
       <Header />
       <ImpactNumbers />
-      <Newsletter />
+      {/* <Newsletter /> */}
       <Testimoni testimoni={testimoni}  />
 
       <Footer />

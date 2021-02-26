@@ -29,7 +29,7 @@ export default function Home({ testimoni }) {
       <Head>
         <meta charset="utf-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-        <title>MAMPU Initiative</title>
+        <title>Inisiatif Mampu</title>
         <link rel="icon" href="/favicon.ico" />
 
         <link

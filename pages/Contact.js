@@ -9,7 +9,7 @@ export default function Contact (){
             <Head>
                 <meta charset="utf-8"></meta>
                 <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-                <title>MAMPU Initiative | Contact Us</title>
+                <title>Inisiatif Mampu | Contact Us</title>
                 <link rel="icon" href="/favicon.ico" />
 
                 <link

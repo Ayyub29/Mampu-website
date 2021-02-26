@@ -9,8 +9,9 @@ export default async (req, res) => {
     }
   
     try {
-      // console.log(LIST_ID);
+      console.log(LIST_ID);
       const DATACENTER = API_KEY.split('-')[1];
+      console.log(DATACENTER);
   
       const data = {
         email_address: email,

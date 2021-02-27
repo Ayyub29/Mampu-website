@@ -70,4 +70,22 @@ export async function fetchOngroundfundraising() {
   console.log(`Error getting Entries for ${contentType.name}.`)
 }
 
-export default { fetchAdvisors, fetchMampuprogramme, fetchLegaldivision, fetchDonorengagement, fetchDigitalfundraising, fetchOngroundfundraising }
+// Past Family
+export async function fetchPastFamily() {
+  const entries = await client.getEntries({
+    content_type : "pastFamily"
+  })
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
+
+// Current Family
+export async function fetchCurrentFamily() {
+  const entries = await client.getEntries({
+    content_type : "currentFamily"
+  })
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
+
+export default { fetchPastFamily, fetchCurrentFamily, fetchAdvisors, fetchMampuprogramme, fetchLegaldivision, fetchDonorengagement, fetchDigitalfundraising, fetchOngroundfundraising }

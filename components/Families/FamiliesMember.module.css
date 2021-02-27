@@ -2,17 +2,22 @@
     /* content: url(/show-toggler.png); */
     margin-right: 48px;
 }
-.famList ul{
-    /* display: flex; */
+.ul{
     list-style: none;
-    /* justify-content: space-evenly; */
     margin-top: 100px;
     margin-bottom: 50px;
     padding-left: 10%;
+} 
+
+.li:first-child{
+    padding-top: 100px;
+    padding-bottom: 250px;
 }
 
-.famList ul li{
+.li{
+    /* padding-top: 100px; */
     margin-bottom:20px;
+    padding-left:150px;
 }
 
 .famItem{
@@ -65,7 +70,7 @@
     background-position-y: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-bottom: -50px;
+    /* margin-bottom: 50px; */
     height: 40vh;
 }
 

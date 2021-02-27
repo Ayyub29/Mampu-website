@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Navbars from '@components/Navbars'
-// import Footer from '@components/Footer'
-import HeaderFam from '@components/Families/HeaderFam'
+import Footer from '@components/Footer'
 import FamiliesMember from '@components/Families/FamiliesMember'
 
 export default function Families (){
@@ -21,9 +20,9 @@ export default function Families (){
                 />
             </Head>
             <Navbars />
-            <HeaderFam/>
+            
             <FamiliesMember/>
-            {/* <Footer/> */}
+            <Footer/>
         </html>
     )
 }

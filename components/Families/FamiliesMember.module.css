@@ -8,7 +8,7 @@
     /* justify-content: space-evenly; */
     margin-top: 100px;
     margin-bottom: 50px;
-    margin-left: 10%;
+    padding-left: 10%;
 }
 
 .famList ul li{
@@ -19,10 +19,84 @@
     padding: 10px 0px;
     font-size: 30px;
     font-weight: 600;
-    color: #383769 !important;
+    color: #383769;
     text-decoration: none;
 
     padding: 0;
     border: none;
     background: none;
 }
+
+.descFam{
+    background-image: url(/fam-desc-bg.png);
+    border-radius: 40px;
+    padding:20px;
+}
+
+.cardFamContainer{
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 30vw;
+    margin-bottom: 30px !important;
+}
+
+.imgFam{
+    border-radius: 40px 40px 0px 0px;
+}
+
+.famSection{
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.titleFam{
+    font-weight:bold; 
+    font-size:18px;
+    line-height: 28px;
+}
+.textFam{
+    font-weight:400; 
+    font-size:14px;
+    line-height: 21px;
+}
+.head{
+    background-image: url(/header-fam-bg.png);
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: -50px;
+    height: 40vh;
+}
+
+.desc{
+    padding: 15vh;
+}
+.desc h1{
+    color:#FFFFFF;
+    font-size: 54px;
+}
+.ombakKanan{
+    margin-left: -20px;
+    margin-bottom: -100px;
+}
+.ombakImg{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .head{
+        height: 30vh;
+    }
+
+    .desc{
+        padding-top: 12vh;
+        padding-left: 5vh;
+    }
+
+    .desc h1{
+        color:#FFFFFF;
+        font-size: 40px;
+    }
+}
+

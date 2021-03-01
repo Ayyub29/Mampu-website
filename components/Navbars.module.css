@@ -22,7 +22,7 @@
 .navLink{
   color:#D1E3F3 !important;
   justify-content: space-between;
-  margin: auto 20px;
+  margin: auto 10px;
   /* margin-right:5%; */
 }
 
@@ -34,6 +34,7 @@
   border:0px;
   outline: 0px;
   text-align-last: right;
+  margin: auto 7px;
 }
 
 .navLink:hover{

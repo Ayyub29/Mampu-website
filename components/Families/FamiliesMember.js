@@ -28,12 +28,19 @@ export default function FamiliesMember({currentFamily, pastFamily}) {
                         backgroundImage: show1? "url(/curr-fam-bg.png)":"none", 
                         backgroundPositionY: "bottom",
                         backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat"
+                        backgroundRepeat: "no-repeat",
+                        marginTop: show1? "0px":"20px"
                     }}>
 
-                        <button onClick={toggle1} className={styles.famItem} style={{color: show1? "#A6C8E8":"#383769"}} > <img src="/show-toggler.png" style={{transform: show1? "rotate(90deg)":"none", color: show1? "#A6C8E8":"#383769"}} className={styles.famToggler}/> Current Families</button>
+                        <button 
+                            onClick={toggle1} 
+                            className={styles.famItem} 
+                            style={{color: show1? "#A6C8E8":"#383769"}} > 
+                            <img src={show1? "/down-arrow.png":"/show-toggler.png"} className={styles.famToggler}/> 
+                            Current Families
+                        </button>
                         <div style={{display: show1? "flex":"none"}} className={styles.famSection}>
-                            <CardColumns >
+                            <CardColumns className={styles.cardColumn}>
                                 {currentFamily.map((a) =>(
                                     <Card className={styles.cardFamContainer}>
                                         <Card.Img variant="top" src={`https:${a.familyPhoto.fields.file.url}`} className={styles.imgFam}/>
@@ -52,7 +59,7 @@ export default function FamiliesMember({currentFamily, pastFamily}) {
                     <div className={styles.li} style={{marginTop: show1? "50px":"20px"}}>
                         <button onClick={toggle2} className={styles.famItem}> <img src="/show-toggler.png" style={{transform: show2? "rotate(90deg)":"none"}} className={styles.famToggler}/> Past Families</button>
                         <div style={{display: show2? "flex":"none"}} className={styles.famSection}>
-                            <CardColumns >
+                            <CardColumns className={styles.cardColumn}>
                                 {pastFamily.map((a) =>(
                                     <Card className={styles.cardFamContainer}>
                                         <Card.Img variant="top" src={`https:${a.familyPhoto.fields.file.url}`} className={styles.imgFam}/>

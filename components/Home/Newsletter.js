@@ -31,8 +31,9 @@ export default function Newsletter() {
     };
 
     return (
-        <Form onSubmit={subscribe} className={styles.formContainer}>
-            <Form.Group controlId="formBasicEmail">
+        <div className={styles.Container}>
+            <Form onSubmit={subscribe} className={styles.formContainer}>
+            <Form.Group className={styles.formInput} controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control id="email-input" ref={inputEl} name="email" required id="email-input" ref={inputEl} name="email" type="email" placeholder="Enter email" />
                 <Form.Text className="text-muted">
@@ -45,5 +46,6 @@ export default function Newsletter() {
                 </Button>
             </div>  
         </Form>
+        </div>
     )
   }

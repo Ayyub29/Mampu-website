@@ -10,20 +10,24 @@ export default function Footer() {
               <p class={styles.title}>Headquarters</p>
               <p class={styles.desc}>Jl. Klampis Anom no. 29 Sukolilo, Surabaya, 60117</p>
           </div>
+          <div class={styles.headquarterText}>
+              <p class={styles.title}>Donate To:</p>
+              <p class={styles.desc}>Mandiri - 1400019875385 <br/> a.n Yayasan Gerakan Mampu Indonesia </p>
+          </div>
           <div class={styles.followusText}>
               <p class={styles.title}>Follow Us</p>
               <a href="mailto:contact@mampu.org" class={styles.desc}> 
-                  <img src="/pesan-icon.svg" alt="Email icon" className={styles.whatsappLogo} /> &#160;
+                  <img src="/pesan-icon.svg" alt="Email icon" className={styles.medsosLogo} /> &#160;
                   <p>contact@mampu.org</p> 
               </a>
               <br></br>
               <a href="https://www.instagram.com/inisiatif.mampu/"  class={styles.desc}> 
-                  <img src="/instagram-icon.svg" alt="Instagram icon" className={styles.whatsappLogo} /> &#160;
+                  <img src="/instagram-icon.svg" alt="Instagram icon" className={styles.medsosLogo} /> &#160;
                   <p>@inisiatif.mampu /@mampu.initiative</p>
               </a>
               <br></br>
               <a href="https://www.linkedin.com/company/mampu-initiative/"  class={styles.desc}> 
-                  <img src="/linkedin-icon.svg" alt="Linkedin icon" className={styles.whatsappLogo} /> &#160;
+                  <img src="/linkedin-icon.svg" alt="Linkedin icon" className={styles.medsosLogo} /> &#160;
                   <p>MAMPU Initiative</p>
               </a>
           </div>

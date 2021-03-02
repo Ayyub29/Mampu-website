@@ -44,6 +44,8 @@ export default function FamiliesMember({currentFamily, pastFamily}) {
                             {currentFamily.map((a) =>(
                                 <Card className={styles.cardFamContainer}>
                                     <Card.Img variant="top" src={`https:${a.familyPhoto.fields.file.url}`} className={styles.imgFam}/>
+                                    <Card.Img variant="top" src="/fam-desc-bg.png" className={styles.ombakPutih}/>
+                                    
                                     <Card.Body className={styles.descFam}>
                                         <Card.Title className={styles.titleFam}>{a.familyName}</Card.Title>
                                         <Card.Text className={styles.textFam}>

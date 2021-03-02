@@ -11,8 +11,12 @@
 
 .footerAtas{
   display:grid;
-  grid-template-columns: 3fr 5fr 5fr;
-  padding:30px 0 20px;
+  grid-template-columns: 3fr 4fr 4fr 4fr;
+  padding:30px 10px 20px 0;
+}
+
+.footerAtas span{
+  color:#9897D0
 }
 
 .mampuLogo{
@@ -23,7 +27,7 @@
 }
 
 .headquarterText{
-  width:40%;
+  width:80%;
 }
 
 .headquarterText, .followusText{
@@ -40,6 +44,7 @@
   margin:0;
   text-decoration: none;
   display: flex;
+ 
 }
 
 .desc p{
@@ -50,11 +55,14 @@
   height:1em;
 }
 
-.desc:hover{
+.followusText > .desc:hover{
   text-decoration: none;
   color:#D1E3F3;
 }
-
+.medsosLogo{
+  vertical-align: middle;
+  padding-right: 5px;
+}
 .footerBawah{
   text-align: center;
   color: #D1E3F3;

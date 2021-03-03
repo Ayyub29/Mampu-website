@@ -43,9 +43,10 @@ export default function Home({ testimoni }) {
       <Navbars />
       <Header />
       <ImpactNumbers />
-      {/* <Newsletter /> */}
-      <Testimoni testimoni={testimoni}  />
 
+      {/* <Newsletter/> */}
+
+      <Testimoni testimoni={testimoni}  />
       <Footer />
     </html>
   )

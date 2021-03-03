@@ -1,0 +1,216 @@
+.famToggler{
+    /* content: url(/show-toggler.png); */
+    margin-right: 48px;
+}
+.ul{
+    list-style: none;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-left: 10%;
+} 
+
+.li:first-child{
+    margin-top: 100px;
+}
+
+.li{
+    /* padding-top: 100px; */
+
+    padding-left:150px;
+}
+
+.famItem{
+    padding: 10px 0px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #383769;
+    text-decoration: none;
+
+    padding: 0;
+    border: none;
+    background: none;
+
+    
+}
+
+.imgFam{
+    border-radius: 40px 40px 0px 0px;
+    max-height: 40vh;
+    object-fit: cover;
+    object-position: 50% 0;
+    position: absolute;
+}
+.ombakPutih{
+    position: absolute;
+    margin-top: 32vh;
+}
+
+.descFam{
+    border-radius: 40px;
+    padding:20px;
+    position: relative;
+    margin-top: 35vh;
+}
+
+.cardFamContainer{
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 40vw;
+    margin-bottom: 30px !important;
+    position: relative;
+}
+
+
+.famSection{
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.titleFam{
+    font-weight:bold; 
+    font-size:18px;
+    line-height: 28px;
+}
+.textFam{
+    font-weight:400; 
+    font-size:14px;
+    line-height: 21px;
+}
+.head{
+    background-image: url(/header-fam-bg.png);
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* margin-bottom: 50px; */
+    height: 40vh;
+}
+
+.desc{
+    padding: 15vh 0vh 15vh 15vh;
+}
+.desc h1{
+    color:#FFFFFF;
+    font-size: 54px;
+}
+.ombakKanan{
+    margin-left: -20px;
+    margin-bottom: -100px;
+}
+.ombakImg{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .li{
+        padding-left:50px;
+    }
+    .famList{
+        margin-bottom: 40vh;
+    }
+    .head{
+        height: 25vh;
+    }
+
+    .desc{
+        padding-top: 12vh;
+        padding-left: 5vh;
+    }
+    .cardColumn {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    .cardFamContainer{
+        max-width: 50vw;
+    }
+
+    .imgFam{
+        max-height: 30vh;
+    }
+    .ombakPutih{
+        margin-top: 20vh;
+    }
+    
+    .descFam{
+        margin-top: 22vh;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .cardColumn {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 1;
+    }
+    .cardFamContainer{
+        max-width: 60vw;
+    }
+    .li{
+        padding-left:80px;
+    }
+    .imgFam{
+        max-height: 30vh;
+    }
+    .ombakPutih{
+        margin-top: 22vh;
+    }
+    
+    .descFam{
+        margin-top: 25vh;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .li{
+        padding-left:30px;
+    }
+    
+    .cardColumn {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 1;
+    }
+    .cardFamContainer{
+        max-width: 80vw;
+    }
+    .titleFam{
+        line-height: 12px;
+    }
+    .textFam{
+        line-height: 15px;
+    }
+    .imgFam{
+        max-height: 40vh;
+    }
+    .ombakPutih{
+        margin-top: 28vh;
+    }
+    
+    .descFam{
+        margin-top: 30vh;
+    }
+    
+}
+
+@media only screen and (min-width: 320px) {
+    /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+    .famItem{
+     
+        font-size: calc(20px + 10 * ((100vw - 320px) / 680));
+        
+    }
+    .titleFam{
+        font-size: calc(14px + 4 * ((100vw - 320px) / 680));
+    }
+    .textFam{
+        font-size: calc(10px + 4 * ((100vw - 320px) / 680));
+    }
+    .desc h1{
+        font-size: calc(28px + 17 * ((100vw - 320px) / 680));
+    }
+    
+}
+

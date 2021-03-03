@@ -1,0 +1,34 @@
+.head{
+    background-image: url(/curr-fam-bg.png);
+    background-color: #383769;
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: -50px;
+    height: 40vh;
+}
+
+.desc{
+    padding: 15vh;
+}
+.desc h1{
+    color:#FFFFFF;
+    font-size: 54px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .head{
+        height: 30vh;
+    }
+
+    .desc{
+        padding-top: 12vh;
+        padding-left: 5vh;
+    }
+
+    .desc h1{
+        color:#FFFFFF;
+        font-size: 40px;
+    }
+}

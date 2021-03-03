@@ -1,9 +1,31 @@
 import Head from 'next/head'
 import Navbars from '@components/Navbars'
 import Footer from '@components/Footer'
-import Pending from '@components/Pending/Pending'
+import HeaderFam from '@components/Families/HeaderFam'
+import FamiliesMember from '@components/Families/FamiliesMember'
 
-export default function Families (){
+import { fetchPastFamily, fetchCurrentFamily} from '@util/contentfulPosts'
+
+
+export async function getStaticProps() {
+    let res1 = await fetchPastFamily()
+    const pastFamily = await res1.map((a) => {
+      return a.fields
+    })
+    let res2 = await fetchCurrentFamily()
+    const currentFamily = await res2.map((a) => {
+      return a.fields
+    })
+  
+    return {
+      props: {
+        pastFamily,
+        currentFamily
+      },
+    }
+}
+
+export default function Families ({currentFamily, pastFamily}){
     return(
         <html>
             <Head>
@@ -20,7 +42,9 @@ export default function Families (){
                 />
             </Head>
             <Navbars />
-            <Pending />
+            {/* <HeaderFam /> */}
+            <FamiliesMember currentFamily={currentFamily} pastFamily={pastFamily}/>
+            <Footer/>
         </html>
     )
 }

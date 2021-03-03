@@ -1,6 +1,21 @@
 import styles from './ImpactNumbers.module.css'
 
 export default function ImpactNumbers() {
+    function animateValue(obj, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            obj.innerHTML = Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+            window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+    
+    // const obj = document.getElementById("helped");
+    // animateValue(obj, 0, 80, 5000);
   return (
       <div>
         <div className={styles.title}>
@@ -10,7 +25,7 @@ export default function ImpactNumbers() {
             <ul>
                 <li>
                     <img src="/numbers-icon-1.svg" alt="numbers-icon-1" className={styles.numbersIcon} />
-                    <h2>Rp 100M+</h2>
+                    <h2>Rp 250M+</h2>
                     <p>Capital <br/> disbursed</p>
                 </li>
                 {/* <div className={styles.verticalLine}></div> */}
@@ -22,13 +37,13 @@ export default function ImpactNumbers() {
                 {/* <div className={styles.verticalLine}></div> */}
                 <li>
                     <img src="/numbers-icon-3.svg" alt="numbers-icon-3" className={styles.numbersIcon} />
-                    <h2>4+</h2>
+                    <h2>5+</h2>
                     <p>Cities</p>
                 </li>
                 {/* <div className={styles.verticalLine}></div> */}
                 <li>
                     <img src="/numbers-icon-4.svg" alt="numbers-icon-4" className={styles.numbersIcon} />
-                    <h2>70+</h2>
+                    <h2 id="helped">80+</h2>
                     <p>Individuals <br/> helped</p>
                 </li>
             </ul>

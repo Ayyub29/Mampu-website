@@ -36,6 +36,7 @@ export default function Newsletter() {
             <Form.Group className={styles.formInput} controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control id="email-input" ref={inputEl} name="email" required id="email-input" ref={inputEl} name="email" type="email" placeholder="Enter email" />
+
                 <Form.Text className="text-muted">
                     {message ? message : "We'll send you MAMPU newsletter every month."}
                 </Form.Text>
@@ -47,5 +48,6 @@ export default function Newsletter() {
             </div>  
         </Form>
         </div>
+
     )
   }

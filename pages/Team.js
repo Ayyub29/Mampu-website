@@ -51,7 +51,7 @@ export default function Team ({advisors, mampuProgramme, legalDivision, donorEng
             <Head>
                 <meta charset="utf-8"></meta>
                 <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-                <title>Inisiatif Mampu | Meet Our Team</title>
+                <title>MAMPU Initiative | Meet Our Team</title>
                 <link rel="icon" href="/favicon.ico" />
 
                 <link

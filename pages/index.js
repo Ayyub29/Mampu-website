@@ -27,6 +27,7 @@ export default function Home({ testimoni }) {
       <Head>
         <meta charset="utf-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta name="description" content="Alleviating Poverty One Family at A time"></meta>
         <title>Inisiatif Mampu</title>
         <link rel="icon" href="/favicon.ico" />
 

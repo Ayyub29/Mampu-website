@@ -13,9 +13,8 @@ export default async (req, res) => {
   
     try {
 
-      const DATACENTER = API_KEY + "-us1";
-      // console.log(DATACENTER);
-      // console.log(API_KEY);
+      const DATACENTER = API_KEY.split('-')[1];
+  
       // 5. The status of 'subscribed' is equivalent to a double opt-in.
 
       const data = {
@@ -27,11 +26,11 @@ export default async (req, res) => {
       // 6. Send a POST request to Mailchimp.
 
       const response = await fetch(
-        `https://us1.api.mailchimp.com/3.0/lists/${LIST_ID}/members`,
+        `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`,
         {
           body: JSON.stringify(data),
           headers: {
-            Authorization: `apikey ${DATACENTER}`,
+            Authorization: `apikey ${API_KEY}`,
             'Content-Type': 'application/json'
           },
           method: 'POST'

@@ -13,8 +13,9 @@ export default async (req, res) => {
   
     try {
 
-      const DATACENTER = API_KEY.split('-')[1];
-  
+      const DATACENTER = API_KEY + "-us1";
+      // console.log(DATACENTER);
+      // console.log(API_KEY);
       // 5. The status of 'subscribed' is equivalent to a double opt-in.
 
       const data = {
@@ -26,11 +27,11 @@ export default async (req, res) => {
       // 6. Send a POST request to Mailchimp.
 
       const response = await fetch(
-        `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`,
+        `https://us1.api.mailchimp.com/3.0/lists/${LIST_ID}/members`,
         {
           body: JSON.stringify(data),
           headers: {
-            Authorization: `apikey ${API_KEY}`,
+            Authorization: `apikey ${DATACENTER}`,
             'Content-Type': 'application/json'
           },
           method: 'POST'
@@ -40,7 +41,7 @@ export default async (req, res) => {
       // 7. Swallow any errors from Mailchimp and return a better error message.
       if (response.status >= 400) {
         return res.status(400).json({
-          error: `There was an error subscribing to the newsletter. Shoot me an email at [me@leerob.io] and I'll add you to the list.`
+          error: `There was an error subscribing to the newsletter. Shoot me an email at [contact@mampu.org] and I'll add you to the list.`
         });
       }
   

@@ -32,21 +32,24 @@ export default function Newsletter() {
 
     return (
         <div className={styles.Container}>
-            <Form onSubmit={subscribe} className={styles.formContainer}>
-            <Form.Group className={styles.formInput} controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control id="email-input" ref={inputEl} name="email" required id="email-input" ref={inputEl} name="email" type="email" placeholder="Enter email" />
+            <div className={styles.label}>
+                <p className={styles.labelText}>Join our newsletter! </p>
+            </div> 
+            <Form onSubmit={subscribe} className={styles.formContainer}> 
+                <Form.Group className={styles.formInput} controlId="formBasicEmail">
+                    <Form.Control className={styles.inputEmail} id="email-input" ref={inputEl} name="email" required id="email-input" ref={inputEl} name="email" type="email" placeholder="Enter your email here" />
 
-                <Form.Text className="text-muted">
-                    {message ? message : "We'll send you MAMPU newsletter every month."}
-                </Form.Text>
-            </Form.Group>
-            <div className={styles.sendBtnContainer}>
-                <Button variant="primary" type="submit" >
-                    Send
-                </Button>
-            </div>  
-        </Form>
+                    <Form.Text className={styles.messageBottom}>
+                        {message ? message : "We'll send you MAMPU newsletter every month."}
+                    </Form.Text>
+                </Form.Group>
+                <div className={styles.sendBtnContainer}>
+                    <Button type="submit" className={styles.joinBtn} >
+                        JOIN
+                    </Button>
+                </div> 
+            </Form>
+             
         </div>
 
     )

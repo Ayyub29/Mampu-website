@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Navbars from '@components/Navbars'
 import Footer from '@components/Footer'
-import HeaderFam from '@components/Families/HeaderFam'
 import FamiliesMember from '@components/Families/FamiliesMember'
 
 import { fetchPastFamily, fetchCurrentFamily} from '@util/contentfulPosts'

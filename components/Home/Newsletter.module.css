@@ -3,16 +3,16 @@
     width:100%;
     /* border:2px solid black; */
     justify-content: center;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .formContainer{
     display: flex;
-    /* grid-template-columns: 2fr 1fr; */
     padding: 20px;
     gap:10px;
-    width:fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    width:45vw;
+
     /* border:2px solid red; */
 }
 
@@ -21,6 +21,88 @@
     /* border:2px solid red; */
 }
 .sendBtnContainer{
-    margin:25px;
+    padding: 5px 0px;
 
+}
+
+.labelText{
+    font-size: 30px;
+    color: #383769;
+    font-weight: 700;
+}
+
+.label{
+    padding:25px 0px 25px 40px;
+}
+
+.inputEmail{
+    width: 40vw;
+    border-radius: 30px;
+    padding: 0px 20px;
+    margin: 5px 0px;
+}
+
+.messageBottom{
+    color:#6C7590;
+    padding: 0px 3px;
+}
+
+.joinBtn{
+    width: 10vw;
+    background-color: #9897D0;
+    border-color: #9897D0;
+    border-radius: 30px;
+}
+.joinBtn:hover{
+    background-color: #383769;
+    transition: 300ms;
+}
+
+@media only screen and (max-width: 768px) {
+    .Container{
+        padding: 0px 20px;
+        grid-template-columns: 1fr;
+    }
+    .label{
+        padding:15px 0px 0px;
+    }
+    .formContainer{
+        padding: 0px;
+    }
+    .inputEmail{
+        width: 50vw;
+        height: 5vw;
+        padding: 0px 10px;
+    }
+    .joinBtn{
+        height: 5vw;
+        width: 20vw;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .inputEmail{
+        width: 50vw;
+        height: 8vw;
+        padding: 0px 10px;
+    }
+    .joinBtn{
+        height: 8vw;
+        width: 20vw;
+    }
+}
+@media only screen and (min-width: 320px) {
+    /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+    .labelText{
+        font-size: calc(15px + 15 * ((100vw - 320px) / 680));
+    }
+    .inputEmail::placeholder, .inputEmail{
+        font-size: calc(12px + 4 * ((100vw - 320px) / 680));
+    }
+    .messageBottom{
+        font-size: calc(10px + 4 * ((100vw - 320px) / 680));;
+    }
+    .joinBtn{
+        font-size: calc(10px + 4 * ((100vw - 320px) / 680));;
+    }
+    
 }

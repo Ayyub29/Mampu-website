@@ -126,14 +126,14 @@
     }
 
     .imgFam{
-        max-height: 30vh;
+        max-height: 30vw;
     }
     .ombakPutih{
-        margin-top: 20vh;
+        margin-top: 25vw;
     }
     
     .descFam{
-        margin-top: 22vh;
+        margin-top: 28vw;
     }
     
     
@@ -152,14 +152,14 @@
         padding-left:80px;
     }
     .imgFam{
-        max-height: 30vh;
+        max-height: 40vw;
     }
     .ombakPutih{
-        margin-top: 22vh;
+        margin-top: 35vw;
+        max-height: 20vw;
     }
-    
     .descFam{
-        margin-top: 25vh;
+        margin-top: 38vw;
     }
 }
 
@@ -183,14 +183,14 @@
         line-height: 15px;
     }
     .imgFam{
-        max-height: 40vh;
+        max-height: 50vw;
     }
     .ombakPutih{
-        margin-top: 28vh;
+        margin-top: 45vw;
     }
     
     .descFam{
-        margin-top: 30vh;
+        margin-top: 48vw;
     }
     
 }

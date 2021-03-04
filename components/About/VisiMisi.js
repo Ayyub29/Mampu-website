@@ -1,5 +1,7 @@
 import styles from './VisiMisi.module.css'
 import Values from './Values'
+import Newsletter from '@components/Home/Newsletter'
+
 
 export default function VisiMisi() {
   return (
@@ -15,9 +17,10 @@ export default function VisiMisi() {
             </div>
         </div>
         <div className={styles.quotesTengah}>
-          <img src="/open-quote.svg" alt="open-quote" className={styles.openQuote} />
+          <Newsletter/>
+          {/* <img src="/open-quote.svg" alt="open-quote" className={styles.openQuote} />
           <p>Overcoming poverty is not a charity, it is an act of justice<br/> <span>- Nelson Mandela</span></p>
-          <img src="/close-quote.svg" alt="close-quote" className={styles.closeQuote} />
+          <img src="/close-quote.svg" alt="close-quote" className={styles.closeQuote} /> */}
         </div>
         <Values />
         <div className={styles.ombakKanan}>

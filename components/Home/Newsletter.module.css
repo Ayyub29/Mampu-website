@@ -40,6 +40,7 @@
     border-radius: 30px;
     padding: 0px 20px;
     margin: 5px 0px;
+    background-color: white;
 }
 
 .messageBottom{
@@ -56,6 +57,12 @@
 .joinBtn:hover{
     background-color: #383769;
     transition: 300ms;
+}
+.joinBtn:active{
+    background-color: #383769;
+}
+.joinBtn:focus{
+    background-color: #383769;
 }
 
 @media only screen and (max-width: 768px) {

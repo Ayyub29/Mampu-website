@@ -5,11 +5,11 @@ import styles from './Navbars.module.css'
 export default function Navbars() {
   return (
     <>
-      <Navbar bg="light" expand="lg" className={styles.navbars} class="d-flex">
+      <Navbar bg="dark" variant="dark" expand="lg" className={styles.navbars} class="d-flex">
         <Navbar.Brand href="/"  className={styles.brandContainer} class="mr-auto p-2">
           <img src="/mampu-icon.svg" alt="Mampu Logo" className={styles.mampuLogo}/>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        <Navbar.Toggle className={styles.navToggle} aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto p-2">
           <Nav.Link href="/" className={styles.navLink}>Home</Nav.Link>

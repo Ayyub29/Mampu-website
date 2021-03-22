@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "postinstall": "netlify-lambda install",
     "export": "next export"
   },
   "dependencies": {
@@ -14,6 +15,7 @@
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.6.0",
     "contentful": "^8.1.7",
+    "netlify-lambda": "^2.0.3",
     "next": "10.0.4",
     "next-images": "^1.7.0",
     "react": "17.0.1",

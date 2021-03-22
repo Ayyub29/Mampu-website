@@ -15,10 +15,6 @@
   width:2em;
 }
 
-.navContainer{
-  
-}
-
 .navLink{
   color:#D1E3F3 !important;
   justify-content: space-between;
@@ -47,8 +43,11 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 988px) {
+@media only screen and (max-width: 990px) {
   .navLinkLanguage{
     text-align-last: left;
+  }
+  .navToggle{
+    border-color: rgba(255,255,255,0) !important;
   }
 }

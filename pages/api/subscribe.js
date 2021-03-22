@@ -21,8 +21,6 @@ export default async (req, res) => {
         email_address: email,
         status: 'subscribed'
       };
-  
-
       // 6. Send a POST request to Mailchimp.
 
       const response = await fetch(

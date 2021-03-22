@@ -6,3 +6,4 @@
   from = "/pages/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+  query = {path = ":path"} #  apply this rule for /old-path?path=example

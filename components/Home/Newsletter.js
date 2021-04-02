@@ -35,7 +35,8 @@ export default function Newsletter() {
             <div className={styles.label}>
                 <p className={styles.labelText}>Join our newsletter! </p>
             </div> 
-            <Form onSubmit={subscribe} className={styles.formContainer} data-netlify="true"> 
+            {/* <Form onSubmit={subscribe}   */}
+            <Form className={styles.formContainer} data-netlify="true">
                 <Form.Group className={styles.formInput} controlId="formBasicEmail">
                     <Form.Control className={styles.inputEmail} id="email-input" ref={inputEl} name="email" required id="email-input" ref={inputEl} name="email" type="email" placeholder="Enter your email here" />
 

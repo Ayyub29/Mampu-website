@@ -37,7 +37,7 @@ export default function Newsletter() {
             </div> 
             {/* <Form onSubmit={subscribe}   */}
             <Form className={styles.formContainer} name ="subscribe-newsletter" method="POST" data-netlify="true">
-                <Form.Control type="hidden" name="subscribe-newsletter" value="name_of_my_form"/>
+                <Form.Control type="hidden" name="form-name" value="subscribe-newsletter" />
                 <Form.Group className={styles.formInput} controlId="formBasicEmail">
                     <Form.Control className={styles.inputEmail} id="email-input" ref={inputEl} name="email" required id="email-input" ref={inputEl} name="email" type="email" placeholder="Enter your email here" />
 

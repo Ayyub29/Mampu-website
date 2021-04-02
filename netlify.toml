@@ -1,7 +1,7 @@
 [build]
   command = "npm run build && npm run export"
   publish = "out"
-  functions = './functions/'
+  functions = './pages/api'
 [[redirects]]
   from = "/api/subscribe"
   to = "/.netlify/functions/:splat"
